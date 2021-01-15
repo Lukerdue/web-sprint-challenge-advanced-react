@@ -30,13 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+Stateful class components are class components that you use a constructor and a super in to either set state or to get state that was passed in when it gets called.
+
 2. Describe the different phases of the component lifecycle.
+
+there's three main stages, the mounting when a component first renders, then updating so if state gets updated or the user does somthing to update the components it rerenders, and then unmounting, so just before the components isn't being rendered.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+class component lifecycle methods are the original use of the useEffect hook, and they're more specific so there's componentDidMount, componentDidUpdate, and ComponentWillUnmount. And you can use those to do essentially the same things you would do inside of useEffect, like axios calls and such. 
+
 4. Define stateful logic.
 
+stateful logic is basically any component that uses state, and it's different from a slice of state because that is the actual state that is being stored or tracked in the app.
+
 5. Describe how to test a React component with React Testing Library.
+
+you want to test anything that a user would do or a user could do to test the app. Testing allows the programmer to see somthing they might've overlooked when coding the app, and lets you test stuff you maybe can't see like axios request statuses and things, so if theres a form or a button you want to make sure that all the parts of that form or button are working exactly how they're supposed to every time and under most every curcumstance.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
